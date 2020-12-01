@@ -17,6 +17,7 @@ Run the following command in both the auth, marketing, dashboard and container f
     $ npm start
 
 Container: http://localhost:8080/
+
 Marketing: http://localhost:8081/
 
 ### Build
