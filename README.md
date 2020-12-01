@@ -22,6 +22,8 @@ Marketing: http://localhost:8081/
 
 Auth: http://localhost:8082/
 
+Dashboard: http://localhost:8083/
+
 ### Build
 
     $ npm run build
