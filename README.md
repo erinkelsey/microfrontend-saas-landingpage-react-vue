@@ -1,4 +1,4 @@
-# Microfrontend SaaS App Landing Page, Authentication and Dashboard
+# Microfrontend SaaS App - Landing Page, Authentication and Dashboard
 
 A demo microfrontend SaaS app landing page, authentication and dashboard built with React, Vue and Webpack Module Federation using Run-Time Integration. Deployment will be handled using Travis CI for CI/CD, and AWS S3 as the host.
 
