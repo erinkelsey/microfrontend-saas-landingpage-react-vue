@@ -1,13 +1,24 @@
 import { mount } from "marketing/MarketingApp";
 import React, { useRef, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 // able to render in any framework -> React, Vue, etc!
 export default () => {
   const ref = useRef(null);
+  const history = useHistory();
 
   useEffect(() => {
-    mount(ref.current);
-  });
+    const { onParentNavigate } = mount(ref.current, {
+      // child to container communication
+      onNavigate: ({ pathname: nextPathname }) => {
+        const { pathname } = history.location;
+        if (pathname !== nextPathname) history.push(nextPathname);
+      },
+    });
+
+    // container to child communication
+    history.listen(onParentNavigate);
+  }, []);
 
   return <div ref={ref} />;
 };
