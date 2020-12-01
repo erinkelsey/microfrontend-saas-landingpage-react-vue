@@ -20,9 +20,15 @@ Container: http://localhost:8080/
 
 Marketing: http://localhost:8081/
 
+Auth: http://localhost:8082/
+
 ### Build
 
     $ npm run build
+
+### Hosted Example
+
+    https://d2nazso9go9gh6.cloudfront.net
 
 ## Microfrontends
 
