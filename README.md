@@ -1,6 +1,6 @@
 # Microfrontend SaaS App Landing Page, Authentication and Dashboard
 
-A demo microfrontend SaaS app landing page, authentication and dashboard built with React, Vue and Webpack Module Federation using Run-Time Integration.
+A demo microfrontend SaaS app landing page, authentication and dashboard built with React, Vue and Webpack Module Federation using Run-Time Integration. Deployment will be handled using Travis CI for CI/CD, and AWS S3 as the host.
 
 NOTE: there is no backend or state for this app; it is just a demo of how to use microfrontends
 
@@ -70,3 +70,11 @@ Must be able to develop each sub-project in isolation, and run each sub-project 
 
 - Container will always use the latest version of a child app (doesn't require a redeploy of containter)
 - OR Container can specify exactly which version of a child it wants to use (requires a redeploy to change)
+
+## Deployment Requirements
+
+- Want to deploy each microfrontend independently (including the container)
+- Location of child app remoteEntry.js files must be known at build time!
+- Many frontend deployment solutions assume you're deploying a single project - we need something that can handle multiple different ones
+- Probably need a CI/CD pipeline of some sort
+- At present, the remoteEntry.js file name is fixed! Need to think about caching issues
