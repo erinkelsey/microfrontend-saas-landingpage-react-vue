@@ -1,6 +1,6 @@
 # Microfrontend SaaS App - Landing Page, Authentication and Dashboard
 
-A demo microfrontend SaaS app landing page, authentication and dashboard built with React, Vue and Webpack Module Federation using Run-Time Integration. Deployment will be handled using Travis CI for CI/CD, and AWS S3 as the host.
+A demo microfrontend SaaS app landing page, authentication and dashboard built with React, Vue and Webpack Module Federation using Run-Time Integration. Deployment will be handled using GitHub Actions for CI/CD, and AWS S3 as the host.
 
 NOTE: there is no backend or state for this app; it is just a demo of how to use microfrontends
 
@@ -17,6 +17,11 @@ Run the following command in both the auth, marketing, dashboard and container f
     $ npm start
 
 Container: http://localhost:8080/
+Marketing: http://localhost:8081/
+
+### Build
+
+    $ npm run build
 
 ## Microfrontends
 
